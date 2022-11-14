@@ -1,9 +1,9 @@
 module.exports = {
   baseUrl: "https://api.kucoin.com",
   apiAuth: {
-    key: "6178e43fb094040001092a40", // KC-API-KEY
-    secret: "", // API-Secret
-    passphrase: "", // KC-API-PASSPHRASE
+    key: "636f547992ace0000147a473", // KC-API-KEY
+    secret: "f80e7828-a2ad-4be2-b365-e3b6c8720f07", // API-Secret
+    passphrase: "Titanex1", // KC-API-PASSPHRASE
   },
   authVersion: 2, // KC-API-KEY-VERSION. Notice: for v2 API-KEY, not required for v1 version.
 }
