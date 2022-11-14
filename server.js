@@ -35,6 +35,7 @@ app.get("/", (req, res) => {
 })
 
 require("./routes/tutorial.routes")(app)
+require("./routes/kucoin.routes")(app)
 
 // set port, listen for requests
 const PORT = process.env.PORT || 5000
