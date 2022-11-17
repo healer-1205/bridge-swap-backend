@@ -5,6 +5,7 @@ module.exports = (app) => {
 
   // Retrieve all kucoin
   router.get("/getCurrencies", kucoin.getCurrencies)
+  router.get("/getDepositAddress", kucoin.getDepositAddress)
 
   app.use("/api/kucoin", router)
 }

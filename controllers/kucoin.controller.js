@@ -13,3 +13,12 @@ exports.getCurrencies = async (req, res) => {
     console.log(err)
   }
 }
+
+exports.getDepositAddress = async (req, res) => {
+  try {
+    const r = await api.getDepositAddress(req.query)
+    return res.send(r.data)
+  } catch (err) {
+    console.log(err)
+  }
+}
