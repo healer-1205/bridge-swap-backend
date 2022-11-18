@@ -1,5 +1,6 @@
 const express = require("express")
 const cors = require("cors")
+const { Server } = require("socket.io")
 
 const app = express()
 
@@ -39,6 +40,14 @@ require("./routes/kucoin.routes")(app)
 
 // set port, listen for requests
 const PORT = process.env.PORT || 5000
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`)
+})
+
+const io = new Server(server, {
+  /* options */
+})
+
+io.on("connection", (socket) => {
+  // ...
 })
